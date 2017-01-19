@@ -1,0 +1,4 @@
+compute_length([],0).
+compute_length([Head|Tail],Length) :-
+	compute_length(Tail,Tail_length),
+	Length is Tail_length+1.

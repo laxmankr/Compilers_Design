@@ -1,0 +1,7 @@
+member(X,[X|_]).
+member(X,[_|L]):- member(X,L).
+intersection([],Z,[]).
+intersection([X|Y],Z,[X|W]):-
+member(X,Z),!,intersection(Y,Z,W).
+intersection([X|Y],Z,W):-
+intersection(Y,Z,W).

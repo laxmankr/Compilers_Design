@@ -1,0 +1,4 @@
+increment_list([L],[L1]) :-
+	L1 is L+1.
+increment_list([Head|Tail],[H|T]) :-
+	H is Head+1,increment_list(Tail,T).
