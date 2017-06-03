@@ -1,0 +1,14 @@
+%{
+#include <stdio.h>
+#include "y.tab.h"
+extern int yylval;
+%}
+
+%%
+[bc]*aa+[bc]*				return R;
+[ac]*bb+[ac]*				return R;
+[ab]*cc+[ab]*				return R;
+\n				        return *yytext;
+[ \t]+				/* ignore whitespace */;
+.*                   	        return A;
+%%

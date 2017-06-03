@@ -1,0 +1,6 @@
+int main()
+{
+int rate,principle,time,interest;
+
+interest=rate*time*principle/100;
+}

@@ -1,0 +1,5 @@
+$t1	=	base	*	height
+$t2	=	$t1	/	2
+area	=	$t2
+$t3	=	x	+	1
+x	=	$t3
