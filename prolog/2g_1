@@ -1,0 +1,6 @@
+member(X,[X|_]).
+member(X,[_|L]):- member(X,L).
+union([],Z,Z).
+union([X|Y],Z,W):-
+member(X,Z),!,union(Y,Z,W).
+union([X|Y],Z,[X|W]):- union(Y,Z,W).

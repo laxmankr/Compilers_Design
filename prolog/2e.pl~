@@ -1,0 +1,4 @@
+check_element_member(Member,[Member|_]).
+
+check_element_member(Member1,[_|List1]) :-
+	check_element_member(Member1,List1).
